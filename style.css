@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+/* リセットCSS
+---------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+a {
+  text-decoration: none;
+  color: #38b48b;
+}
+
+/* 共通
+---------------------------*/
+header, nav, h2, .main-visual, footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER
+---------------------------*/
+header {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  background-color: darkgreen;
+  text-align: center;
+}
+header h1 {
+  padding-top: 10px;
+}
+.nav-list {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.nav-list li {
+  color: #fff;
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/* MAIN
+---------------------------*/
+main {
+  width: 100%;
+  padding: 10px 40px 40px;
+  margin: 0 auto;
+  background-color: #ecfcdf;
+}
+.heading {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.about-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.about-img-box {
+  width: 30%;
+  margin-right: 10px;
+}
+.about-box img {
+  width: 100%;
+  border-radius: 10px;
+}
+.about-text-box {
+  background-color: #fff;
+  width: 70%;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-label {
+  width: 100px;
+  font-weight: bold;
+}
+.about-label, .about-text {
+  line-height: 40px;
+}
+.social {
+  display: flex;
+  margin-left: 100px;
+}
+.social i {
+  margin: 0 20px 20px 0;
+}
+
+/* FOOTER
+---------------------------*/
+footer {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: darkgreen
+}
+footer p small {
+  color: #fff;
+}
+
+/* モバイル用
+---------------------------*/
+@media screen and (max-width:768px) {
+  header {
+    height: auto
+  }
+  .about-box {
+    flex-direction: column;
+  }
+  .about-img-box, .about-text-box {
+    width: 100%;
+  }
+  .social {
+    margin-left: 0;
+    justify-content: center;
+  }
+  .fit {
+    width: fit-content;
+  }
+}
